@@ -33,22 +33,22 @@ namespace Salary_Slip
             if (designation == "engineer")
             {
                 employees eng = new allEmployees(100, 500);
-                Console.WriteLine(eng.Total());
+                Console.WriteLine("Your gross salary is ${0}" ,eng.Total());
             }
             else if (designation == "manager")
             {
-                employees mng = new allEmployees(100, 500);
-                Console.WriteLine(mng.Total());
+                employees mng = new allEmployees(250, 1000);
+                Console.WriteLine("Your gross salary is ${0}", mng.Total());
             }
 
             else if (designation == "analyst")
             {
                 employees ana = new allEmployees(150, 800);
-                Console.WriteLine(ana.Total());
+                Console.WriteLine("Your gross salary is ${0}", ana.Total());
             }
             else
             {
-                Console.WriteLine("Invaid Entry");
+                Console.WriteLine("Invalid Entry");
             }
         }
     }
